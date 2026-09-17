@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar um Problema - Cuida Cidade Apicum-Açu</title>
+    <meta name="description" content="Registre vazamentos de água, acúmulo de lixo, iluminação pública ou outros problemas urbanos em Apicum-Açu.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegação Principal">
+            <div class="conteudo-cabecalho">
+                <a href="index.html" class="grupo-logo">
+                    <img src="imagens/logo-cabecalho.png" alt="Logo Cuida Cidade">
+                    <h2>Cuida Cidade</h2>
+                </a>
+
+                <div class="grupo-links">
+                    <a href="index.html" class="links">Início</a>
+                    <a href="cronograma.html" class="links">Cronograma da coleta</a>
+                    <a href="faca-sua-parte.html" class="links">Faça sua parte</a>
+                </div>
+
+                <div class="grupo-icones">
+                    <a href="pesquisar.html" class="btn-icone-cabecalho" title="Pesquisar Ocorrências">
+                        <img src="imagens/lupa-cabecalho.png" alt="Pesquisar" class="icone-cabecalho">
+                    </a>
+                    <a href="login.html" class="btn-icone-cabecalho" title="Entrar / Meu Perfil">
+                        <img src="imagens/homem-cabecalho.png" alt="Perfil" class="icone-cabecalho">
+                    </a>
+                </div>
+
+                <details class="menu-mobile">
+                    <summary aria-label="Abrir menu de navegação">&#9776;</summary>
+                    <div class="links-menu-mobile">
+                        <a href="index.html" class="links">Início</a>
+                        <a href="cronograma.html" class="links">Cronograma da coleta</a>
+                        <a href="faca-sua-parte.html" class="links">Faça sua parte</a>
+                        <a href="reportar.html" class="links ativo">Reportar Problema</a>
+                        <a href="pesquisar.html" class="links">Pesquisar</a>
+                        <a href="login.html" class="links">Entrar / Login</a>
+                        <a href="cadastro.html" class="links">Cadastre-se</a>
+                    </div>
+                </details>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Reportar um Problema Urbano</h1>
+            <p>Sua colaboração é fundamental! Preencha as informações abaixo para notificar as equipes de zeladoria pública.</p>
+        </section>
+
+        <section class="container-pagina">
+            <div class="form-card">
+                <form id="form-reportar">
+                    <div class="form-group">
+                        <label for="tipo-problema">Tipo de Ocorrência *</label>
+                        <select id="tipo-problema" class="form-control" required>
+                            <option value="">Selecione o tipo de problema...</option>
+                            <option value="vazamento">💧 Desperdício ou Vazamento de Água</option>
+                            <option value="lixo">🗑️ Lixo ou Entulho Acumulado</option>
+                            <option value="iluminacao">💡 Falha na Iluminação Pública</option>
+                            <option value="buraco">🕳️ Buraco na Vivia / AsfaltoDanificado</option>
+                            <option value="animal">🐕 Animal Errante ou em Perigo</option>
+                            <option value="outro">❓ Outro Problema</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-endereco">Localização da Ocorrência (Rua / Bairro / Referência) *</label>
+                        <input type="text" id="input-endereco" class="form-control" placeholder="Ex: Avenida Nambu, próximo ao bar da Círlene" required>
+                        <button type="button" id="btn-gps" class="btn-gps">📍 Usar minha localização GPS atual</button>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descricao">Descrição Detalhada do Problema *</label>
+                        <textarea id="descricao" class="form-control" placeholder="Descreva a situação, há quanto tempo acontece e detalhes que ajudem a equipe a encontrar a ocorrência..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-foto">Foto da Ocorrência (Opcional, mas recomendado)</label>
+                        <input type="file" id="input-foto" class="form-control" accept="image/*">
+                        <img id="preview-foto" src="" alt="Pré-visualização da imagem enviada" class="preview-imagem">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nome-morador">Seu Nome / Contato (Opcional)</label>
+                        <input type="text" id="nome-morador" class="form-control" placeholder="Morador de Apicum-Açu (Pode deixar em branco se preferir anônimo)">
+                    </div>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button type="submit" class="btn" style="width: 100%; max-width: 320px;">ENVIAR RELATO</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <div class="footer-col">
+                <h3>Cuida Cidade</h3>
+                <p>Plataforma comunitária de zeladoria urbana para Apicum-Açu - MA.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Navegação</h3>
+                <p><a href="index.html">Início</a></p>
+                <p><a href="pesquisar.html">Pesquisar Ocorrências</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cuida Cidade Apicum-Açu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

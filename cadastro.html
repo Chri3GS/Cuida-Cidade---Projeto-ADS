@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Morador - Cuida Cidade Apicum-Açu</title>
+    <meta name="description" content="Crie seu cadastro no Cuida Cidade para reportar ocorrências e acompanhar melhorias no seu bairro em Apicum-Açu.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegação Principal">
+            <div class="conteudo-cabecalho">
+                <a href="index.html" class="grupo-logo">
+                    <img src="imagens/logo-cabecalho.png" alt="Logo Cuida Cidade">
+                    <h2>Cuida Cidade</h2>
+                </a>
+
+                <div class="grupo-links">
+                    <a href="index.html" class="links">Início</a>
+                    <a href="cronograma.html" class="links">Cronograma da coleta</a>
+                    <a href="faca-sua-parte.html" class="links">Faça sua parte</a>
+                </div>
+
+                <div class="grupo-icones">
+                    <a href="pesquisar.html" class="btn-icone-cabecalho" title="Pesquisar Ocorrências">
+                        <img src="imagens/lupa-cabecalho.png" alt="Pesquisar" class="icone-cabecalho">
+                    </a>
+                    <a href="login.html" class="btn-icone-cabecalho" title="Entrar / Meu Perfil" aria-label="Entrar / Meu Perfil">
+                        <img src="imagens/homem-cabecalho.png" alt="Perfil" class="icone-cabecalho">
+                    </a>
+                </div>
+
+                <details class="menu-mobile">
+                    <summary aria-label="Abrir menu de navegação">&#9776;</summary>
+                    <div class="links-menu-mobile">
+                        <a href="index.html" class="links">Início</a>
+                        <a href="cronograma.html" class="links">Cronograma da coleta</a>
+                        <a href="faca-sua-parte.html" class="links">Faça sua parte</a>
+                        <a href="reportar.html" class="links">Reportar Problema</a>
+                        <a href="pesquisar.html" class="links">Pesquisar</a>
+                        <a href="login.html" class="links">Entrar / Login</a>
+                        <a href="cadastro.html" class="links ativo">Cadastre-se</a>
+                    </div>
+                </details>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Cadastro de Morador</h1>
+            <p>Junte-se à rede de cidadania ativa de Apicum-Açu e acompanhe a resolução das ocorrências da sua rua!</p>
+        </section>
+
+        <section class="container-pagina">
+            <div class="form-card">
+                <form id="form-cadastro">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" class="form-control" placeholder="Digite seu nome completo..." required autofocus>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone / WhatsApp *</label>
+                        <input type="tel" id="telefone" class="form-control" placeholder="(98) 99999-9999" required maxlength="15">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bairro">Bairro em Apicum-Açu *</label>
+                        <select id="bairro" class="form-control" required>
+                            <option value="">Selecione seu bairro...</option>
+                            <option value="centro">Centro</option>
+                            <option value="bairro-novo">Bairro Novo</option>
+                            <option value="mangueiral">Mangueiral</option>
+                            <option value="ponta-areia">Ponta de Areia</option>
+                            <option value="cruzador">Cruzador</option>
+                            <option value="zona-rural">Zona Rural / Povoado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endereco">Endereço Completo (Rua, Número e Ponto de Referência) *</label>
+                        <input type="text" id="endereco" class="form-control" placeholder="Ex: Av. Nambu, nº 120, próximo ao mercado" required>
+                    </div>
+
+                    <div class="form-group" style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+                        <input type="checkbox" id="termos" required style="width: 18px; height: 18px; accent-color: var(--primary-color);">
+                        <label for="termos" style="font-size: 0.9rem; margin-bottom: 0; font-weight: normal; color: var(--text-muted);">
+                            Concordo em compartilhar meus dados para fins de atendimento e fiscalização comunitária.
+                        </label>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button type="submit" class="btn" style="width: 100%; max-width: 320px;">CADASTRAR CONTA</button>
+                    </div>
+
+                    <hr id="linha-horizontal" style="margin: 24px 0; background: var(--border-color);">
+
+                    <div style="text-align: center; font-size: 0.95rem; color: var(--text-muted);">
+                        <p>Já possui uma conta cadastrada?</p>
+                        <a href="login.html" class="btn" style="background: linear-gradient(135deg, #719f58 0%, #116600 100%); width: 100%; max-width: 320px; margin-top: 10px; animation: none;">Fazer Login</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <div class="footer-col">
+                <h3>Cuida Cidade</h3>
+                <p>Plataforma comunitária de zeladoria urbana para Apicum-Açu - MA.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Navegação</h3>
+                <p><a href="index.html">Início</a></p>
+                <p><a href="login.html">Fazer Login</a></p>
+                <p><a href="cadastro.html">Cadastrar-se</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cuida Cidade Apicum-Açu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

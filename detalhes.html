@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Ocorrência #CC-489201 - Cuida Cidade Apicum-Açu</title>
+    <meta name="description" content="Acompanhe os detalhes, localização e linha do tempo de resolução da ocorrência na Avenida Nambu.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegação Principal">
+            <div class="conteudo-cabecalho">
+                <a href="index.html" class="grupo-logo">
+                    <img src="imagens/logo-cabecalho.png" alt="Logo Cuida Cidade">
+                    <h2>Cuida Cidade</h2>
+                </a>
+
+                <div class="grupo-links">
+                    <a href="index.html" class="links">Início</a>
+                    <a href="cronograma.html" class="links">Cronograma da coleta</a>
+                    <a href="faca-sua-parte.html" class="links">Faça sua parte</a>
+                </div>
+
+                <div class="grupo-icones">
+                    <a href="pesquisar.html" class="btn-icone-cabecalho" title="Pesquisar Ocorrências">
+                        <img src="imagens/lupa-cabecalho.png" alt="Pesquisar" class="icone-cabecalho">
+                    </a>
+                    <a href="login.html" class="btn-icone-cabecalho" title="Entrar / Meu Perfil">
+                        <img src="imagens/homem-cabecalho.png" alt="Perfil" class="icone-cabecalho">
+                    </a>
+                </div>
+
+                <details class="menu-mobile">
+                    <summary aria-label="Abrir menu de navegação">&#9776;</summary>
+                    <div class="links-menu-mobile">
+                        <a href="index.html" class="links">Início</a>
+                        <a href="cronograma.html" class="links">Cronograma da coleta</a>
+                        <a href="faca-sua-parte.html" class="links">Faça sua parte</a>
+                        <a href="reportar.html" class="links">Reportar Problema</a>
+                        <a href="pesquisar.html" class="links">Pesquisar</a>
+                        <a href="login.html" class="links">Entrar / Login</a>
+                        <a href="cadastro.html" class="links">Cadastre-se</a>
+                    </div>
+                </details>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Ocorrência #CC-489201</h1>
+            <p>Desperdício de água e alagamento na Avenida Nambu</p>
+        </section>
+
+        <section class="container-pagina">
+            <div class="detalhes-container">
+                <img src="imagens/alagamento-rua.webp" alt="Foto da ocorrência na Avenida Nambu" class="detalhes-header-img">
+                
+                <div class="detalhes-body">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+                        <span class="badge-status status-andamento" style="font-size: 1rem; padding: 6px 16px;">Status: Em Andamento</span>
+                        <span style="font-size: 0.95rem; color: var(--text-muted);">Data do Relato: 28 de Agosto de 2026</span>
+                    </div>
+
+                    <h2 style="font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 8px;">Desperdício de água na avenida Nambu</h2>
+                    <p style="font-size: 1.1rem; color: var(--primary-color); font-weight: 600; margin-bottom: 20px;">📍 Localização: Avenida Nambu, próximo à casa de Círlene do bar - Apicum-Açu, MA</p>
+
+                    <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Descrição do Problema:</h3>
+                    <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 30px;">
+                        Situação relatada por moradores que ocorre de forma recorrente há anos. Trata-se do acúmulo e vazamento de água limpa na via devido a torneiras e mangueiras deixadas abertas indevidamente, gerando poças, erosão no calçamento e desperdício de recurso hídrico valioso para o município.
+                    </p>
+
+                    <!-- LINHA DO TEMPO -->
+                    <h3 style="font-size: 1.2rem; margin-bottom: 16px;">Histórico de Atendimento da Prefeitura:</h3>
+                    <div class="timeline">
+                        <div class="timeline-step concluido">
+                            <h4>1. Ocorrência Registrada pelo Morador</h4>
+                            <p>28/08/2026 às 09:15 - Protocolo gerado com foto anexada.</p>
+                        </div>
+                        <div class="timeline-step concluido">
+                            <h4>2. Triagem e Encaminhamento</h4>
+                            <p>29/08/2026 às 14:30 - Encaminhado para a Secretaria de Infraestrutura e Meio Ambiente.</p>
+                        </div>
+                        <div class="timeline-step concluido">
+                            <h4>3. Inspeção Técnica Agendada</h4>
+                            <p>31/08/2026 às 10:00 - Equipe de conscientização e fiscalização enviada ao local.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <h4>4. Resolução e Reparo Final</h4>
+                            <p>Previsão: Ajuste de rede de distribuição e orientação aos moradores.</p>
+                        </div>
+                    </div>
+
+                    <!-- BOTÃO DE APOIO COMUNITÁRIO -->
+                    <div style="background: var(--bg-main); padding: 20px; border-radius: var(--radius-md); text-align: center; margin-top: 30px;">
+                        <h4 style="margin-bottom: 8px;">Esta ocorrência afeta a sua rua também?</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;">Apoie para aumentar a prioridade no painel da prefeitura!</p>
+                        <button type="button" id="btn-apoiar" class="btn">👍 Apoiar esta ocorrência</button>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-muted);"><strong id="contador-apoio">42</strong> moradores apoiaram este relato.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <div class="footer-col">
+                <h3>Cuida Cidade</h3>
+                <p>Plataforma comunitária de zeladoria urbana para Apicum-Açu - MA.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Navegação</h3>
+                <p><a href="index.html">Início</a></p>
+                <p><a href="pesquisar.html">Pesquisar Ocorrências</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cuida Cidade Apicum-Açu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

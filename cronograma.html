@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma da Coleta de Lixo - Cuida Cidade Apicum-Açu</title>
+    <meta name="description"
+        content="Consulte os dias e horários da coleta doméstica, seletiva e de entulhos nos bairros de Apicum-Açu.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegação Principal">
+            <div class="conteudo-cabecalho">
+                <a href="index.html" class="grupo-logo">
+                    <img src="imagens/logo-cabecalho.png" alt="Logo Cuida Cidade">
+                    <h2>Cuida Cidade</h2>
+                </a>
+
+                <div class="grupo-links">
+                    <a href="index.html" class="links">Início</a>
+                    <a href="cronograma.html" class="links ativo">Cronograma da coleta</a>
+                    <a href="faca-sua-parte.html" class="links">Faça sua parte</a>
+                </div>
+
+                <div class="grupo-icones">
+                    <a href="pesquisar.html" class="btn-icone-cabecalho" title="Pesquisar Ocorrências">
+                        <img src="imagens/lupa-cabecalho.png" alt="Pesquisar" class="icone-cabecalho">
+                    </a>
+                    <a href="login.html" class="btn-icone-cabecalho" title="Entrar / Meu Perfil">
+                        <img src="imagens/homem-cabecalho.png" alt="Perfil" class="icone-cabecalho">
+                    </a>
+                </div>
+
+                <details class="menu-mobile">
+                    <summary aria-label="Abrir menu de navegação">&#9776;</summary>
+                    <div class="links-menu-mobile">
+                        <a href="index.html" class="links">Início</a>
+                        <a href="cronograma.html" class="links ativo">Cronograma da coleta</a>
+                        <a href="faca-sua-parte.html" class="links">Faça sua parte</a>
+                        <a href="reportar.html" class="links">Reportar Problema</a>
+                        <a href="pesquisar.html" class="links">Pesquisar</a>
+                        <a href="login.html" class="links">Entrar / Login</a>
+                        <a href="cadastro.html" class="links">Cadastre-se</a>
+                    </div>
+                </details>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Cronograma Municipal da Coleta de Lixo</h1>
+            <p>Fique atento aos dias e horários da coleta em seu bairro. Manter a cidade limpa é dever de todos!</p>
+        </section>
+
+        <section class="container-pagina">
+            <!-- FILTROS POR BAIRRO -->
+            <div class="filtro-cronograma">
+                <button type="button" class="btn-filtro ativo" data-filtro="todos">Todos os Bairros</button>
+                <button type="button" class="btn-filtro" data-filtro="centro">Centro</button>
+                <button type="button" class="btn-filtro" data-filtro="mangueirão">Mangueirão</button>
+                <button type="button" class="btn-filtro" data-filtro="redenção">Redenção</button>
+                <button type="button" class="btn-filtro" data-filtro="novo-apicum">Novo Apicum</button>
+                <button type="button" class="btn-filtro" data-filtro="tabatinga">Tabatinga</button>
+                <button type="button" class="btn-filtro" data-filtro="outras localidades">Outras Localidades</button>
+            </div>
+
+            <!-- TABELA DE CRONOGRAMA -->
+            <table class="tabela-cronograma">
+                <thead>
+                    <tr>
+                        <th>Ruas</th>
+                        <th>Tipo de Coleta</th>
+                        <th>Dias da Semana</th>
+                        <th>Horário Recomendado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-bairro="centro">
+                        <td><strong>Rua Santo Antônio</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Segunda-feira/Quinta-feira</td>
+                        <td>Manhã</td>
+                    </tr>
+                    <tr data-bairro="centro">
+                        <td><strong>Travessa Pinheiro</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Segunda-feira/Quinta-feira</td>
+                        <td>Manhã</td>
+                    </tr>
+                    <tr data-bairro="centro">
+                        <td><strong>Travessa Mirinzal</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Segunda-feira/Quinta-feira</td>
+                        <td>Manhã</td>
+                    </tr>
+                    <tr data-bairro="mangueirão">
+                        <td><strong>Av. Tancredo Neves</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Segunda-feira/Quinta-feira</td>
+                        <td>Tarde</td>
+                    </tr>
+                    <tr data-bairro="mangueirão">
+                        <td><strong>Rua Salvador</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Segunda-feira/Quinta-feira</td>
+                        <td>Tarde</td>
+                    </tr>
+                    <tr data-bairro="mangueirão">
+                        <td><strong>Travessa Porto Alegre</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Segunda-feira/Quinta-feira</td>
+                        <td>Tarde</td>
+                    </tr>
+                    <tr data-bairro="redenção">
+                        <td><strong>Rua Getúlio Vargas</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Segunda-feira/Quinta-feira</td>
+                        <td>Tarde</td>
+                    </tr>
+                    <tr data-bairro="redenção">
+                        <td><strong>Rua Joaquim Amado</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Segunda-feira/Quinta-feira</td>
+                        <td>Tarde</td>
+                    </tr>
+                    <tr data-bairro="redenção">
+                        <td><strong>Rua Redenção</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Segunda-feira/Quinta-feira</td>
+                        <td>Tarde</td>
+                    </tr>
+                    <tr data-bairro="novo-apicum">
+                        <td><strong>Rua Nova 1</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Terça-feira/Sexta-feira</td>
+                        <td>Manhã</td>
+                    </tr>
+                    <tr data-bairro="novo-apicum">
+                        <td><strong>Rua Nova 2</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Terça-feira/Sexta-feira</td>
+                        <td>Manhã</td>
+                    </tr>
+                    <tr data-bairro="novo-apicum">
+                        <td><strong>Rua Nova 3</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Terça-feira/Sexta-feira</td>
+                        <td>Manhã</td>
+                    </tr>
+                    <tr data-bairro="tabatinga">
+                        <td><strong>Av. Gregório Castro</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Segunda-feira/Quinta-feira</td>
+                        <td>Manhã</td>
+                    </tr>
+                    <tr data-bairro="tabatinga">
+                        <td><strong>Rua Benedito Lopes</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Segunda-feira/Quinta-feira</td>
+                        <td>Manhã</td>
+                    </tr>
+                    <tr data-bairro="tabatinga">
+                        <td><strong>Rua Central</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Segunda-feira/Quinta-feira</td>
+                        <td>Manhã</td>
+                    </tr>
+                    <tr data-bairro="outras localidades">
+                        <td><strong>Portelinha</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Terça-feira/Sexta-feira</td>
+                        <td>Manhã</td>
+                    </tr>
+                    <tr data-bairro="outras localidades">
+                        <td><strong>Subestação</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Terça-feira/Sexta-feira</td>
+                        <td>Tarde</td>
+                    </tr>
+                    <tr data-bairro="outras localidades">
+                        <td><strong>Conjunto do Incra</strong></td>
+                        <td><span class="badge-tipo badge-domestica">Coleta Doméstica</span></td>
+                        <td>Terça-feira/Sexta-feira</td>
+                        <td>Tarde</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- RECOMENDAÇÕES -->
+            <div class="grid-dicas">
+                <div class="card-dica">
+                    <h3>📦 Acondicionamento Correto</h3>
+                    <p>Coloque o lixo em sacos plásticos bem vedados. Evite deixar sacos abertos no chão para evitar a
+                        ação de animais errantes.</p>
+                </div>
+                <div class="card-dica">
+                    <h3>⏰ Horário de Descarte</h3>
+                    <p>Coloque o lixo na lixeira no máximo 1 hora antes da passagem do caminhão coletor para manter as
+                        vias limpas.</p>
+                </div>
+                <div class="card-dica">
+                    <h3>⚠️ Vidros e Objetos Cortantes</h3>
+                    <p>Embale vidros quebrados e objetos pontiagudos em caixas de papelão ou garrafas PET para proteger
+                        os garis.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <div class="footer-col">
+                <h3>Cuida Cidade</h3>
+                <p>Plataforma comunitária de zeladoria urbana para Apicum-Açu - MA.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Navegação</h3>
+                <p><a href="index.html">Início</a></p>
+                <p><a href="cronograma.html">Cronograma da Coleta</a></p>
+                <p><a href="faca-sua-parte.html">Faça Sua Parte</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cuida Cidade Apicum-Açu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

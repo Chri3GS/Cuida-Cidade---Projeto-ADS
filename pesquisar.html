@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisar Ocorrências e Serviços - Cuida Cidade Apicum-Açu</title>
+    <meta name="description" content="Busque ocorrências registradas em Apicum-Açu e acompanhe o status dos serviços públicos.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegação Principal">
+            <div class="conteudo-cabecalho">
+                <a href="index.html" class="grupo-logo">
+                    <img src="imagens/logo-cabecalho.png" alt="Logo Cuida Cidade">
+                    <h2>Cuida Cidade</h2>
+                </a>
+
+                <div class="grupo-links">
+                    <a href="index.html" class="links">Início</a>
+                    <a href="cronograma.html" class="links">Cronograma da coleta</a>
+                    <a href="faca-sua-parte.html" class="links">Faça sua parte</a>
+                </div>
+
+                <div class="grupo-icones">
+                    <a href="pesquisar.html" class="btn-icone-cabecalho" title="Pesquisar Ocorrências">
+                        <img src="imagens/lupa-cabecalho.png" alt="Pesquisar" class="icone-cabecalho">
+                    </a>
+                    <a href="login.html" class="btn-icone-cabecalho" title="Entrar / Meu Perfil">
+                        <img src="imagens/homem-cabecalho.png" alt="Perfil" class="icone-cabecalho">
+                    </a>
+                </div>
+
+                <details class="menu-mobile">
+                    <summary aria-label="Abrir menu de navegação">&#9776;</summary>
+                    <div class="links-menu-mobile">
+                        <a href="index.html" class="links">Início</a>
+                        <a href="cronograma.html" class="links">Cronograma da coleta</a>
+                        <a href="faca-sua-parte.html" class="links">Faça sua parte</a>
+                        <a href="reportar.html" class="links">Reportar Problema</a>
+                        <a href="pesquisar.html" class="links ativo">Pesquisar</a>
+                        <a href="login.html" class="links">Entrar / Login</a>
+                        <a href="cadastro.html" class="links">Cadastre-se</a>
+                    </div>
+                </details>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Pesquisar Ocorrências Registradas</h1>
+            <p>Acompanhe em tempo real os relatos dos moradores e a atuação da prefeitura em Apicum-Açu.</p>
+        </section>
+
+        <section class="container-pagina">
+            <!-- BARRA DE BUSCA -->
+            <div class="search-box-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Digite uma rua, bairro ou tipo de problema (ex: água, lixo, Nambu)..." autofocus>
+            </div>
+
+            <!-- RESULTADOS -->
+            <div class="grid-resultados" id="grid-resultados">
+
+                <!-- OCORRÊNCIA 1 -->
+                <article class="card-resultado">
+                    <img src="imagens/alagamento-rua.webp" alt="Alagamento na Avenida Nambu">
+                    <div class="card-resultado-body">
+                        <div>
+                            <span class="badge-status status-andamento">Em Andamento</span>
+                            <h3 style="font-size: 1.15rem; margin-bottom: 6px;">Desperdício de água na avenida Nambu</h3>
+                            <p style="font-size: 0.88rem; color: var(--primary-color); font-weight: 600; margin-bottom: 8px;">Avenida Nambu • Relatado em 28/08/2026</p>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">Vazamento recorrente decorrente de torneiras e mangueiras abertas.</p>
+                        </div>
+                        <a href="detalhes.html" class="btn" style="padding: 10px 16px; min-width: auto; width: 100%;">VER DETALHES</a>
+                    </div>
+                </article>
+
+                <!-- OCORRÊNCIA 2 -->
+                <article class="card-resultado">
+                    <img src="imagens/foto-barcos.webp" alt="Limpeza de Igarapé em Apicum-Açu">
+                    <div class="card-resultado-body">
+                        <div>
+                            <span class="badge-status status-resolvido">Resolvido</span>
+                            <h3 style="font-size: 1.15rem; margin-bottom: 6px;">Limpeza e desobstrução de igarapé</h3>
+                            <p style="font-size: 0.88rem; color: var(--primary-color); font-weight: 600; margin-bottom: 8px;">Zona Costeira • Relatado em 15/08/2026</p>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">Retirada de resíduos flutuantes e plásticos no porto dos barcos.</p>
+                        </div>
+                        <a href="detalhes.html" class="btn" style="padding: 10px 16px; min-width: auto; width: 100%;">VER DETALHES</a>
+                    </div>
+                </article>
+
+                <!-- OCORRÊNCIA 3 -->
+                <article class="card-resultado">
+                    <img src="imagens/imagem-aerea.webp" alt="Iluminação pública no Bairro Novo">
+                    <div class="card-resultado-body">
+                        <div>
+                            <span class="badge-status status-aberto">Em Aberto</span>
+                            <h3 style="font-size: 1.15rem; margin-bottom: 6px;">Lâmpadas queimadas na rua principal</h3>
+                            <p style="font-size: 0.88rem; color: var(--primary-color); font-weight: 600; margin-bottom: 8px;">Bairro Novo • Relatado em 02/09/2026</p>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">Trecho de 200m no escuro necessitando substituição de luminárias LED.</p>
+                        </div>
+                        <a href="detalhes.html" class="btn" style="padding: 10px 16px; min-width: auto; width: 100%;">VER DETALHES</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <div class="footer-col">
+                <h3>Cuida Cidade</h3>
+                <p>Plataforma comunitária de zeladoria urbana para Apicum-Açu - MA.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Navegação</h3>
+                <p><a href="index.html">Início</a></p>
+                <p><a href="reportar.html">Reportar Ocorrência</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cuida Cidade Apicum-Açu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
